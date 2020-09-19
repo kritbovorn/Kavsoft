@@ -11,6 +11,11 @@
 		08A8681B25088E6E00F19DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8681A25088E6E00F19DD7 /* ContentView.swift */; };
 		08A8681D25088E7400F19DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A8681C25088E7400F19DD7 /* Assets.xcassets */; };
 		08A8682025088E7400F19DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A8681F25088E7400F19DD7 /* Preview Assets.xcassets */; };
+		480FF0302515DECF00D80D06 /* ForeachRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FF02F2515DECF00D80D06 /* ForeachRectangle.swift */; };
+		480FF0362515E02000D80D06 /* RecSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FF0352515E02000D80D06 /* RecSecond.swift */; };
+		480FF03C2515E1EE00D80D06 /* RecMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FF03B2515E1EE00D80D06 /* RecMin.swift */; };
+		4878DAA82515F1A900E40B01 /* RecHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DAA72515F1A900E40B01 /* RecHour.swift */; };
+		48C082CF25148F2F006642E3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C082CE25148F2F006642E3 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		08A8681C25088E7400F19DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08A8681F25088E7400F19DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		08A8682125088E7400F19DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480FF02F2515DECF00D80D06 /* ForeachRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeachRectangle.swift; sourceTree = "<group>"; };
+		480FF0352515E02000D80D06 /* RecSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSecond.swift; sourceTree = "<group>"; };
+		480FF03B2515E1EE00D80D06 /* RecMin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecMin.swift; sourceTree = "<group>"; };
+		4878DAA72515F1A900E40B01 /* RecHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecHour.swift; sourceTree = "<group>"; };
+		48C082CE25148F2F006642E3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,12 @@
 			children = (
 				08A8681825088E6E00F19DD7 /* AnalogClockAppApp.swift */,
 				08A8681A25088E6E00F19DD7 /* ContentView.swift */,
+				480FF02F2515DECF00D80D06 /* ForeachRectangle.swift */,
+				480FF0352515E02000D80D06 /* RecSecond.swift */,
+				480FF03B2515E1EE00D80D06 /* RecMin.swift */,
+				4878DAA72515F1A900E40B01 /* RecHour.swift */,
+				48C082CE25148F2F006642E3 /* HeaderView.swift */,
+				480FEFF0251522AC00D80D06 /* Rectang */,
 				08A8681C25088E7400F19DD7 /* Assets.xcassets */,
 				08A8682125088E7400F19DD7 /* Info.plist */,
 				08A8681E25088E7400F19DD7 /* Preview Content */,
@@ -67,6 +83,13 @@
 				08A8681F25088E7400F19DD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		480FEFF0251522AC00D80D06 /* Rectang */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rectang;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FF0362515E02000D80D06 /* RecSecond.swift in Sources */,
+				4878DAA82515F1A900E40B01 /* RecHour.swift in Sources */,
 				08A8681B25088E6E00F19DD7 /* ContentView.swift in Sources */,
+				48C082CF25148F2F006642E3 /* HeaderView.swift in Sources */,
+				480FF03C2515E1EE00D80D06 /* RecMin.swift in Sources */,
+				480FF0302515DECF00D80D06 /* ForeachRectangle.swift in Sources */,
 				08A8681925088E6E00F19DD7 /* AnalogClockAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
