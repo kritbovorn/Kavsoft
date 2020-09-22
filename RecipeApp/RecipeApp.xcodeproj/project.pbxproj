@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485BE767251785A40085DB7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE766251785A40085DB7C /* HomeView.swift */; };
+		485BE76C251786B80085DB7C /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE76B251786B80085DB7C /* NavView.swift */; };
+		485BE7702517ABE40085DB7C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE76F2517ABE40085DB7C /* SearchView.swift */; };
+		485BE7792517B9700085DB7C /* TitleHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE7782517B9700085DB7C /* TitleHeadView.swift */; };
+		485BE781251848520085DB7C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE780251848520085DB7C /* Recipe.swift */; };
+		485BE78425184E9A0085DB7C /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE78325184E9A0085DB7C /* RecipeCard.swift */; };
+		485BE78925189A4A0085DB7C /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE78825189A4A0085DB7C /* CategoryCardView.swift */; };
+		485BE78C2518A4130085DB7C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE78B2518A4130085DB7C /* TabBarView.swift */; };
+		485BE78F2518A7C60085DB7C /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE78E2518A7C60085DB7C /* TabButtonView.swift */; };
+		485BE7932518DF5F0085DB7C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BE7922518DF5F0085DB7C /* CustomCorner.swift */; };
+		485DB721251A49E4002C3BFB /* TabPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB720251A49E4002C3BFB /* TabPlusButton.swift */; };
 		4878DB2A2517234500E40B01 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DB292517234500E40B01 /* RecipeAppApp.swift */; };
 		4878DB2C2517234500E40B01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DB2B2517234500E40B01 /* ContentView.swift */; };
 		4878DB2E2517234900E40B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DB2D2517234900E40B01 /* Assets.xcassets */; };
@@ -14,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485BE766251785A40085DB7C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		485BE76B251786B80085DB7C /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		485BE76F2517ABE40085DB7C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		485BE7782517B9700085DB7C /* TitleHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeadView.swift; sourceTree = "<group>"; };
+		485BE780251848520085DB7C /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		485BE78325184E9A0085DB7C /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		485BE78825189A4A0085DB7C /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		485BE78B2518A4130085DB7C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		485BE78E2518A7C60085DB7C /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
+		485BE7922518DF5F0085DB7C /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		485DB720251A49E4002C3BFB /* TabPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPlusButton.swift; sourceTree = "<group>"; };
 		4878DB262517234500E40B01 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DB292517234500E40B01 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		4878DB2B2517234500E40B01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +55,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485BE764251785780085DB7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				485BE780251848520085DB7C /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		485BE7652517858D0085DB7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				485BE766251785A40085DB7C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		485BE76A2517860A0085DB7C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				485BE76B251786B80085DB7C /* NavView.swift */,
+				485BE76F2517ABE40085DB7C /* SearchView.swift */,
+				485BE7782517B9700085DB7C /* TitleHeadView.swift */,
+				485BE78325184E9A0085DB7C /* RecipeCard.swift */,
+				485BE78825189A4A0085DB7C /* CategoryCardView.swift */,
+				485BE78B2518A4130085DB7C /* TabBarView.swift */,
+				485DB720251A49E4002C3BFB /* TabPlusButton.swift */,
+				485BE78E2518A7C60085DB7C /* TabButtonView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		485BE7912518DF440085DB7C /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				485BE7922518DF5F0085DB7C /* CustomCorner.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
 		4878DB1D2517234500E40B01 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +115,10 @@
 			children = (
 				4878DB292517234500E40B01 /* RecipeAppApp.swift */,
 				4878DB2B2517234500E40B01 /* ContentView.swift */,
+				485BE7912518DF440085DB7C /* Shape */,
+				485BE76A2517860A0085DB7C /* SubViews */,
+				485BE7652517858D0085DB7C /* Views */,
+				485BE764251785780085DB7C /* Models */,
 				4878DB2D2517234900E40B01 /* Assets.xcassets */,
 				4878DB322517234900E40B01 /* Info.plist */,
 				4878DB2F2517234900E40B01 /* Preview Content */,
@@ -138,7 +203,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485BE7702517ABE40085DB7C /* SearchView.swift in Sources */,
+				485BE76C251786B80085DB7C /* NavView.swift in Sources */,
+				485BE781251848520085DB7C /* Recipe.swift in Sources */,
+				485BE767251785A40085DB7C /* HomeView.swift in Sources */,
+				485BE78925189A4A0085DB7C /* CategoryCardView.swift in Sources */,
+				485BE7792517B9700085DB7C /* TitleHeadView.swift in Sources */,
+				485BE78F2518A7C60085DB7C /* TabButtonView.swift in Sources */,
+				485DB721251A49E4002C3BFB /* TabPlusButton.swift in Sources */,
+				485BE78425184E9A0085DB7C /* RecipeCard.swift in Sources */,
 				4878DB2C2517234500E40B01 /* ContentView.swift in Sources */,
+				485BE7932518DF5F0085DB7C /* CustomCorner.swift in Sources */,
+				485BE78C2518A4130085DB7C /* TabBarView.swift in Sources */,
 				4878DB2A2517234500E40B01 /* RecipeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
