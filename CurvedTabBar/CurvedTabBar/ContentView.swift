@@ -9,9 +9,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var index: Int = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        GeometryReader { main in
+            VStack(spacing: 0) {
+                
+                BaseView(index: $index, content: {
+                    if index == 0 {
+                        
+                        ScrollViewPage(metric: main)
+                        
+                    }
+                    else if index == 1 {
+                        Color.green
+                    }
+                    else if index == 2 {
+                        Color.blue
+                    }
+                    else {
+                        Color.black.opacity(0.05)
+                    }
+                })
+                
+            }
+            
+        }
     }
 }
 
@@ -20,3 +45,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+

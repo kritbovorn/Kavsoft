@@ -11,6 +11,8 @@
 		48550E382520B6E400C8E6A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48550E372520B6E400C8E6A3 /* ContentView.swift */; };
 		48550E3A2520B6E700C8E6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48550E392520B6E700C8E6A3 /* Assets.xcassets */; };
 		48550E3D2520B6E700C8E6A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48550E3C2520B6E700C8E6A3 /* Preview Assets.xcassets */; };
+		48550E492521BAD200C8E6A3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48550E482521BAD200C8E6A3 /* BaseView.swift */; };
+		48550E512521DA8C00C8E6A3 /* ScrollViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48550E502521DA8C00C8E6A3 /* ScrollViewPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		48550E392520B6E700C8E6A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48550E3C2520B6E700C8E6A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48550E3E2520B6E700C8E6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48550E482521BAD200C8E6A3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		48550E502521DA8C00C8E6A3 /* ScrollViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				48550E352520B6E400C8E6A3 /* CurvedTabBarApp.swift */,
 				48550E372520B6E400C8E6A3 /* ContentView.swift */,
+				48550E482521BAD200C8E6A3 /* BaseView.swift */,
+				48550E502521DA8C00C8E6A3 /* ScrollViewPage.swift */,
 				48550E392520B6E700C8E6A3 /* Assets.xcassets */,
 				48550E3E2520B6E700C8E6A3 /* Info.plist */,
 				48550E3B2520B6E700C8E6A3 /* Preview Content */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48550E492521BAD200C8E6A3 /* BaseView.swift in Sources */,
 				48550E382520B6E400C8E6A3 /* ContentView.swift in Sources */,
+				48550E512521DA8C00C8E6A3 /* ScrollViewPage.swift in Sources */,
 				48550E362520B6E400C8E6A3 /* CurvedTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
