@@ -20,33 +20,154 @@ struct NavMenuHorizontalScrollView: View {
     var body: some View {
         
         
-        HStack {
-            
-            // FIXME: - First Button
-            VStack {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
                 
-                Button(action: {
+                // FIXME: - First Button
+                VStack {
                     
-                }, label: {
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        HStack {
+                            
+                            Image("Home")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
+                            
+                            Text("Home")
+                                .foregroundColor(.black)
+                                .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
+                                .fixedSize()
+                        }
+                    })
                     
-                    HStack {
-                        
-                        Image("Home")
-                            .renderingMode(.original)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
-                        
-                        Text("Home  Home Home")
-                            .foregroundColor(.black)
-                            .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
-                    }
-                })
+                    Capsule()
+                        .fill(Color.white)
+                        .frame(height: proxyHeight(for: metric) * 0.05)
+                }
+                .padding(.horizontal)
                 
-                Capsule()
-                    .fill(Color.white)
-                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: proxyHeight(for: metric) * 0.05)
+                // FIXME: - First Button
+                VStack {
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        HStack {
+                            
+                            Image("Home")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
+                            
+                            Text("Home")
+                                .foregroundColor(.black)
+                                .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
+                                .fixedSize()
+                        }
+                    })
+                    
+                    Capsule()
+                        .fill(Color.white)
+                        .frame(height: proxyHeight(for: metric) * 0.05)
+                }
+                .padding(.horizontal)
+                
+                
+                // FIXME: - First Button
+                VStack {
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        HStack {
+                            
+                            Image("Home")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
+                            
+                            Text("Home  Home Home Home  Home Home")
+                                .foregroundColor(.black)
+                                .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
+                                .fixedSize()
+                        }
+                    })
+                    
+                    Capsule()
+                        .fill(Color.white)
+                        .frame(height: proxyHeight(for: metric) * 0.05)
+                }
+                .padding(.horizontal)
+                
+                // FIXME: - First Button
+                VStack {
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        HStack {
+                            
+                            Image("Home")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
+                            
+                            Text("Home  Home ")
+                                .foregroundColor(.black)
+                                .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
+                                .fixedSize()
+                        }
+                    })
+                    
+                    Capsule()
+                        .fill(Color.white)
+                        .frame(height: proxyHeight(for: metric) * 0.05)
+                }
+                .padding(.horizontal)
+                
+                // FIXME: - First Button
+                VStack {
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        HStack {
+                            
+                            Image("Home")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: proxyHeight(for: metric) * 0.4, height: proxyHeight(for: metric) * 0.4)
+                            
+                            Text("Home  Home Home")
+                                .foregroundColor(.black)
+                                .font(.system(size: proxyHeight(for: metric) * 0.4, weight: .semibold))
+                                .fixedSize()
+                        }
+                    })
+                    
+                    Capsule()
+                        .fill(Color.white)
+                        .frame(height: proxyHeight(for: metric) * 0.05)
+                }
+                .padding(.horizontal)
+                
+                
+                
             }
+            .padding(.horizontal)
         }
     }
 }

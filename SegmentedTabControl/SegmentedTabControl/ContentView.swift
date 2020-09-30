@@ -45,13 +45,12 @@ struct HomeView: View {
                         // FIXME: - Sub Second
                         GeometryReader { subSecond in
                             
-                            ScrollView(.horizontal, showsIndicators: false) {
                                 NavMenuHorizontalScrollView(metric: subSecond)
                                     .frame(width: subSecond.size.width, height: subSecond.size.height)
-                            }
+
                         }
                         .frame(height: first.size.height * 0.5)
-                        .background(Color.yellow)
+//                        .background(Color.yellow)
                        
                         
                     }
@@ -65,7 +64,7 @@ struct HomeView: View {
                     EmptyView()
                 }
                 .frame(height: main.size.height * 0.05)
-                .background(Color.gray)
+//                .background(Color.gray)
                 
                 // FIXME: - Third
                 GeometryReader { third in
@@ -73,7 +72,7 @@ struct HomeView: View {
                 }
                 .frame(height: main.size.height * 0.8)
                 .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
-                .background(Color.yellow)
+//                .background(Color.yellow)
                 
                 
             }
