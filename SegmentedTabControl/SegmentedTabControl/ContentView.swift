@@ -58,29 +58,31 @@ struct HomeView: View {
                         
                     }
                 }
-                .frame(height: main.size.height * 0.15)
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                .background(Color.red)
+                .frame(height: main.size.height * 0.17)
                 
-                // FIXME: - Second
-                GeometryReader { second in
-                    EmptyView()
-                }
-                .frame(height: main.size.height * 0.05)
-//                .background(Color.gray)
+                .background(Color.red)
+
                 
                 // FIXME: - Third
                 GeometryReader { third in
-                    EmptyView()
+                    
+                    FirstView()
+                        
+                        .frame(width: third.size.width)
+                        
+                    
                 }
-                .frame(height: main.size.height * 0.8)
-                .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
-//                .background(Color.yellow)
+                .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 15 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+                .frame(height: main.size.height * 0.83)
+                
                 
                 
             }
-            .ignoresSafeArea(.all, edges: .all)
+            
+            
         }
+        .ignoresSafeArea(.all, edges: .all)
     }
     
 }

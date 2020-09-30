@@ -31,9 +31,11 @@ struct NavMenuHorizontalScrollView: View {
                     
                     Button(action: {
                         
-                        withAnimation {
-                            index = nav.id
-                        }
+                        index = nav.id
+                        
+//                        withAnimation {
+//                            index = nav.id
+//                        }
                     }, label: {
                         
                         VStack {
@@ -49,7 +51,7 @@ struct NavMenuHorizontalScrollView: View {
                                 
                                 Text(nav.title)
                                     .foregroundColor(index == nav.id ? Color.white : Color.white.opacity(0.7))
-                                    .font(.system(size: index == nav.id ? proxyHeight(for: metric) * 0.32 : proxyHeight(for: metric) * 0.25, weight: .bold))
+                                    .font(.system(size: index == nav.id ? proxyHeight(for: metric) * 0.38 : proxyHeight(for: metric) * 0.36, weight: .bold))
                                     .fixedSize()
                             }
                             
