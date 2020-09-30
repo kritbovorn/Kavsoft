@@ -17,11 +17,12 @@ struct  NavTitleView: View {
     
     var metric: GeometryProxy
     
+    
     var body: some View {
         
         HStack {
             Text("Home")
-                .foregroundColor(.primary)
+                .foregroundColor(Color(.systemGray6))
                 .font(.system(size: proxyHeight(for: metric) * 0.35, weight: .heavy))
             Spacer()
         }

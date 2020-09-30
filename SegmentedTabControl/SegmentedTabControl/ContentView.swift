@@ -23,6 +23,9 @@ struct ContentView_Previews: PreviewProvider {
 
 struct HomeView: View {
     
+    @State private var index: Int = 1
+    @State private var offset: CGFloat = .zero
+    
     var body: some View {
         
         GeometryReader { main in
@@ -45,7 +48,7 @@ struct HomeView: View {
                         // FIXME: - Sub Second
                         GeometryReader { subSecond in
                             
-                                NavMenuHorizontalScrollView(metric: subSecond)
+                                NavMenuHorizontalScrollView(metric: subSecond, index: $index, offset: $offset)
                                     .frame(width: subSecond.size.width, height: subSecond.size.height)
 
                         }
