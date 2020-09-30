@@ -44,7 +44,11 @@ struct HomeView: View {
                         
                         // FIXME: - Sub Second
                         GeometryReader { subSecond in
-                            EmptyView()
+                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                NavMenuHorizontalScrollView(metric: subSecond)
+                                    .frame(width: subSecond.size.width, height: subSecond.size.height)
+                            }
                         }
                         .frame(height: first.size.height * 0.5)
                         .background(Color.yellow)
