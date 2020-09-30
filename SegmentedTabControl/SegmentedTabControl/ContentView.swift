@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        HomeView()
     }
 }
 
@@ -19,4 +19,62 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct HomeView: View {
+    
+    var body: some View {
+        
+        GeometryReader { main in
+            VStack(spacing: 0) {
+                
+                // FIXME: - First
+                GeometryReader { first in
+                    
+                    VStack(spacing: 0) {
+                        
+                        // FIXME: - Sub First
+                        GeometryReader { subFirst in
+                            
+                            NavTitleView(metric: main)
+                                .frame(width: subFirst.size.width, height: subFirst.size.height)
+                        }
+                        .frame(height: first.size.height * 0.5)
+                        .background(Color.red)
+                        
+                        // FIXME: - Sub Second
+                        GeometryReader { subSecond in
+                            EmptyView()
+                        }
+                        .frame(height: first.size.height * 0.5)
+                        .background(Color.yellow)
+                       
+                        
+                    }
+                }
+                .frame(height: main.size.height * 0.15)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .background(Color.red)
+                
+                // FIXME: - Second
+                GeometryReader { second in
+                    EmptyView()
+                }
+                .frame(height: main.size.height * 0.05)
+                .background(Color.gray)
+                
+                // FIXME: - Third
+                GeometryReader { third in
+                    EmptyView()
+                }
+                .frame(height: main.size.height * 0.8)
+                .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+                .background(Color.yellow)
+                
+                
+            }
+            .ignoresSafeArea(.all, edges: .all)
+        }
+    }
+    
 }
