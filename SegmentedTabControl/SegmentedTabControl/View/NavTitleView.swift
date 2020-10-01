@@ -18,15 +18,17 @@ struct  NavTitleView: View {
     var metric: GeometryProxy
     
     
+    @Binding var index: Int
+    
     var body: some View {
-        
-        HStack {
-            Text("Home")
-                .foregroundColor(Color(.systemGray6))
-                .font(.system(size: proxyHeight(for: metric) * 0.35, weight: .heavy))
-            Spacer()
-        }
-        .padding(.horizontal)
+
+            HStack {
+                Text(navMenus[index - 1].title)
+                    .foregroundColor(Color(.systemGray6))
+                    .font(.system(size: proxyHeight(for: metric) * 0.35, weight: .heavy))
+                Spacer()
+            }
+            .padding(.horizontal)
         
     }
 }

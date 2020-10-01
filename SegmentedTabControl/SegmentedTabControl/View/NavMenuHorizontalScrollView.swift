@@ -19,6 +19,8 @@ struct NavMenuHorizontalScrollView: View {
         return proxyHeight
     }
     
+    var width = UIScreen.main.bounds.width
+    
     var body: some View {
         
         
@@ -33,6 +35,8 @@ struct NavMenuHorizontalScrollView: View {
                         
                         index = nav.id
                         
+//                        offset = width * CGFloat(nav.id)
+                        offset = width
 //                        withAnimation {
 //                            index = nav.id
 //                        }

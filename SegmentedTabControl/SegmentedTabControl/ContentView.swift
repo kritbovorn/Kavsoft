@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+//    var navs: [NavMenu]
     var body: some View {
         
         HomeView()
@@ -24,7 +26,10 @@ struct ContentView_Previews: PreviewProvider {
 struct HomeView: View {
     
     @State private var index: Int = 1
-    @State private var offset: CGFloat = .zero
+    @State private var offset: CGFloat = UIScreen.main.bounds.width
+   
+    
+    var width = UIScreen.main.bounds.width
     
     var body: some View {
         
@@ -39,7 +44,7 @@ struct HomeView: View {
                         // FIXME: - Sub First
                         GeometryReader { subFirst in
                             
-                            NavTitleView(metric: main)
+                            NavTitleView(metric: main, index: $index)
                                 .frame(width: subFirst.size.width, height: subFirst.size.height)
                         }
                         .frame(height: first.size.height * 0.5)
@@ -67,10 +72,21 @@ struct HomeView: View {
                 // FIXME: - Third
                 GeometryReader { third in
                     
-                    FirstView()
+                    HStack {
                         
-                        .frame(width: third.size.width)
+                        FirstView()
+//                            .frame(width: third.size.width)
+                            .frame(width: third.frame(in: .global).width)
                         
+                        SecondView()
+                            .frame(width: third.frame(in: .global).width)
+                            .background(Color.green)
+                        
+                        ThirdView()
+                            .frame(width: third.frame(in: .global).width)
+                            .background(Color.pink)
+                    }
+                    .offset(x: offset)
                     
                 }
                 .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 15 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)

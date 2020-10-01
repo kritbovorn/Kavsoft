@@ -21,7 +21,7 @@ struct FirstView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: main.size.width)
-                            .cornerRadius(main.size.height * 0.02)
+                            .cornerRadius(main.size.height * 0.04)
                             
                     }
                 }
